@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e9141;
+    transition: background-color 0.5s ease;
+}
+
+.buttonRed {
+  
+    background-color: #ad3229;
+ 
+  
+}
+
+.buttonRed:hover {
+    background-color: #862721;
+    transition: background-color 0.5s ease;
+}
+
+.rotating {
+    animation: rotateAnimation 5s infinite linear ;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
